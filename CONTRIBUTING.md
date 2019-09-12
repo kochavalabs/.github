@@ -1,6 +1,6 @@
 # Contributing to Kochavalabs
 
-Thank you for chosing to contribute! There are several ways you can contribute to a Kochavalabs repository.
+Thank you for choosing to contribute! There are several ways you can contribute to a Kochavalabs repository.
 
 ## Reporting an Issue
 
@@ -14,7 +14,7 @@ But before submitting an issue please make sure you have done all of the followi
 
 ## Request a Feature
 
-You may also use Github Issues to request a feature or ehancement to one of our existing projects.
+You may also use Github Issues to request a feature or enhancement to one of our existing projects.
 
 Similar to reporting an issue make sure you first do the following:
 
