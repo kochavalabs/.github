@@ -29,7 +29,7 @@ You may submit changes to open Kochavalabs repositories through Pull Requests.
 The following steps can be followed to submit a pull request:
 
 - Make a fork of the repository you wish to contribute to
-- Checkout a new topic branch example: `git checkout -b my-contribution develop`
+- Checkout a new topic branch off of develop, example: `git checkout -b my-contribution develop`
 - Commit changes with descriptive messages
 - Push commits to your fork
 - Open a Pull Request to the original Kochavalabs repository
