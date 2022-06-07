@@ -1,0 +1,11 @@
+{
+    "name": "Pull Request",
+    "description": "Pull Request starter workflow for Go apps.",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "go.mod$",
+        "^Dockerfile"
+    ]
+}

@@ -12,7 +12,7 @@ on:
         required: false
         type: string
     secrets:
-      GH_CI_PASS:
+      GH_CI_PAT:
         description: 'Token password for GitHub auth'
         required: true
       # Container Registry arguments
@@ -43,7 +43,7 @@ jobs:
       # Use auth to get access to private Git repos for Go code dependencies.
       - name: Configure git for private modules
         env:
-          TOKEN: ${{ secrets.GH_CI_PASS }}
+          TOKEN: ${{ secrets.GH_CI_PAT }}
           GITHUB_USERNAME: ${{ inputs.GH_CI_USER }}
         run: git config --global url."https://${GITHUB_USERNAME}:${TOKEN}@github.com".insteadOf "https://github.com"
       # Vendor Go code needed to build docker image.
