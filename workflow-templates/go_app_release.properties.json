@@ -1,0 +1,11 @@
+{
+    "name": "Release Docker Version",
+    "description": "Release Docker Version starter workflow.",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "go.mod$",
+        "^Dockerfile"
+    ]
+}
