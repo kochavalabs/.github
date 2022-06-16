@@ -83,9 +83,6 @@ jobs:
           registry: ${{ secrets.CONTAINER_REGISTRY }}
           username: _json_key
           password: ${{ secrets.CONTAINER_REGISTRY_JSON_KEY }}
-      # Setup QEMU needed to build arm64 images.
-      - name: Setup QEMU
-        uses: docker/setup-qemu-action@v1
       # Setup Docker builder needed to build multi-architectural images.
       - name: Setup Docker Buildx
         id: buildx
@@ -97,7 +94,7 @@ jobs:
           push: true
           context: .
           file: Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           build-args: |
             VERSION=${{ steps.release.outputs.version }}
           tags: ${{ steps.release.outputs.tags }}
